@@ -79,7 +79,7 @@ ul {
 /* boxes color*/
 
 .box {
-    border-radius: 10px 10px 13px 13px
+    border-radius: 10px 10px 13px 13px;
 }
 
 .Work {
@@ -106,7 +106,6 @@ div:nth-child(6) {
     background-color: hsl(43, 84%, 65%);
 }
 
-
 /*Icon WORK CONTAINER*/
 
 .img_container {
@@ -123,8 +122,6 @@ div:nth-child(6) {
     right: 13px;
     top: -7px;
 }
-
-
 
 .headercontainer {
     height: fit-content;

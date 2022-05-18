@@ -1,17 +1,19 @@
 const tabBtns = document.querySelectorAll(".tab-btn");
 const dashbord = document.querySelector(".dashbord");
-const tabs = document.querySelectorAll('.tab')
-const dailyTab = document.querySelector('.daily')
-const weeklyTab = document.querySelector('.weekly')
-const monthlyTab = document.querySelector('.monthly')
+const tabs = document.querySelectorAll(".tab");
+const dailyTab = document.querySelector(".daily");
+const weeklyTab = document.querySelector(".weekly");
+const monthlyTab = document.querySelector(".monthly");
 
-tabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = document.querySelector('.' + btn.dataset.target);
-    tabs.forEach(tab => tab.classList.remove('active'));
-    target.classList.add('active');
-  })
-})
+dailyTab.classList.add("active");
+
+tabBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const target = document.querySelector("." + btn.dataset.target);
+    tabs.forEach((tab) => tab.classList.remove("active"));
+    target.classList.add("active");
+  });
+});
 
 fetch("./data.json")
   .then((response) => response.json())
@@ -26,7 +28,9 @@ fetch("./data.json")
       const monthlypretime = item.timeframes.monthly.previous;
 
       //dailydata
-      dailyTab.insertAdjacentHTML('beforeend', `<div class="box ${titles}">
+      dailyTab.insertAdjacentHTML(
+        "beforeend",
+        `<div class="box ${titles}">
           <div class="img_container">
             <img class="image" src="./images/${i + 1}.svg" alt="">
           </div>
@@ -42,10 +46,13 @@ fetch("./data.json")
               Yesterday - ${dailypretime}hrs
             </div>
           </div>
-        </div>`)
+        </div>`
+      );
 
       //monthly data
-      monthlyTab.insertAdjacentHTML('beforeend', `<div class="box ${titles}">
+      monthlyTab.insertAdjacentHTML(
+        "beforeend",
+        `<div class="box ${titles}">
           <div class="img_container">
             <img class="image" src="./images/${i + 1}.svg" alt="">
           </div>
@@ -61,9 +68,12 @@ fetch("./data.json")
               Last month - ${monthlypretime}hrs
             </div>
           </div>
-        </div>`)
+        </div>`
+      );
 
-      weeklyTab.insertAdjacentHTML('beforeend', `<div class="box ${titles}">
+      weeklyTab.insertAdjacentHTML(
+        "beforeend",
+        `<div class="box ${titles}">
           <div class="img_container">
             <img class="image" src="./images/${i + 1}.svg" alt="">
           </div>
@@ -79,7 +89,7 @@ fetch("./data.json")
               Last week - ${weeklypretime}hrs
             </div>
           </div>
-        </div>`)
+        </div>`
+      );
     });
   });
-
