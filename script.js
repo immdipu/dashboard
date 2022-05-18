@@ -62,6 +62,24 @@ fetch("./data.json")
             </div>
           </div>
         </div>`)
+
+      weeklyTab.insertAdjacentHTML('beforeend', `<div class="box ${titles}">
+          <div class="img_container">
+            <img class="image" src="./images/${i + 1}.svg" alt="">
+          </div>
+          <div class="headercontainer">
+            <div class="header">
+              <h5>${titles}</h5>
+              <img src="./images/icon-ellipsis.svg" alt="">
+            </div>
+            <div class="time">
+              <h1>${weeklycurrenttime}hrs</h1>
+            </div>
+            <div class="pre_time">
+              Last week - ${weeklypretime}hrs
+            </div>
+          </div>
+        </div>`)
     });
   });
 
