@@ -59,9 +59,10 @@ ul {
 
 .btn {
     list-style: none;
-    color: hsl(236, 100%, 87%);
+    color: white;
     font-size: 13px;
     cursor: pointer;
+
 }
 
 .btn:hover {

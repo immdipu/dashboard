@@ -5,13 +5,16 @@ const dailyTab = document.querySelector(".daily");
 const weeklyTab = document.querySelector(".weekly");
 const monthlyTab = document.querySelector(".monthly");
 
-dailyTab.classList.add("active");
+tabs[0].classList.add("active");
+tabBtns[0].classList.add("activetwo");
 
 tabBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const target = document.querySelector("." + btn.dataset.target);
     tabs.forEach((tab) => tab.classList.remove("active"));
+    tabBtns.forEach((tab) => tab.classList.remove("activetwo"));
     target.classList.add("active");
+    btn.classList.add("activetwo");
   });
 });
 

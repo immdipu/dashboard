@@ -19,6 +19,10 @@
     .tab:not(.active) {
       display: none;
     }
+
+    .tab-btn:not(.activetwo) {
+      color: hsl(236, 100%, 87%);
+    }
   </style>
 </head>
 
@@ -35,7 +39,7 @@
       </div>
       <div class="buttons" style="padding-bottom: 10px;">
         <ul>
-          <li class="btn tab-btn" data-target="daily" data-test="1">Daily</li>
+          <li class="btn tab-btn" data-target="daily">Daily</li>
           <li class="btn tab-btn" data-target="weekly">Weekly</li>
           <li class="btn tab-btn" data-target="monthly">Monthly</li>
         </ul>
