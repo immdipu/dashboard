@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- css link-->
+  <link rel="stylesheet" href="./style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Epilogue:wght@500&family=Fredoka+One&family=Inter:wght@300;500;700&family=Jua&family=Kumbh+Sans:wght@300&family=Manrope:wght@600;800&family=Overpass&family=Poppins:wght@500&family=Righteous&family=Roboto:wght@700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet" />
+  <style>
+    .tab:not(.active) {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="profile">
+      <div class="bio">
+        <img class="profilepic" src="./images/image-jeremy.png" alt="" />
+        <p style="color: white; opacity: 0.7; font-size: 10px">Report for</p>
+        <h3 class="name">
+          Jeremy <br />
+          Robson
+        </h3>
+      </div>
+      <div class="buttons" style="padding-bottom: 10px;">
+        <ul>
+          <li class="btn tab-btn" data-target="daily" data-test="1">Daily</li>
+          <li class="btn tab-btn" data-target="weekly">Weekly</li>
+          <li class="btn tab-btn" data-target="monthly">Monthly</li>
+        </ul>
+      </div>
+    </div>
+    <div style="width: 100%">
+      <div class="tab daily"></div>
+      <div class="tab weekly"></div>
+      <div class="tab monthly"></div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

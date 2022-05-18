@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 7rem 0 0 0;
+    font-family: rubik;
+    background-color: hsl(226, 43%, 10%);
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    max-width: 48rem;
+    display: flex;
+
+    gap: 18px;
+}
+
+.profile {
+    width: 14rem;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 12px;
+}
+
+.bio {
+    background-color: hsl(237deg 100% 68%);
+    padding: 34px 0px 51px 23px;
+    border-radius: 11px 11px 20px 20px;
+}
+
+.name {
+    color: white;
+    font-weight: 100;
+    margin-top: 4px;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.profilepic {
+    width: 46%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-bottom: 20%;
+}
+
+.buttons {
+    padding: 11px 0px 0px 23px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 7px;
+}
+
+.btn {
+    list-style: none;
+    color: hsl(236, 100%, 87%);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.tab {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-auto-rows: 11rem;
+    gap: 18px;
+}
+
+/* boxes color*/
+
+.box {
+    border-radius: 10px 10px 13px 13px
+}
+
+.Work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.Play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.Study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.Exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.Social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+div:nth-child(6) {
+    background-color: hsl(43, 84%, 65%);
+}
+
+
+/*Icon WORK CONTAINER*/
+
+.img_container {
+    display: block;
+    height: 32px;
+
+    overflow: hidden;
+}
+
+.image {
+    width: 28%;
+    position: relative;
+    float: right;
+    right: 13px;
+    top: -7px;
+}
+
+
+
+.headercontainer {
+    height: fit-content;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 16px 16px 9px 9px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.headercontainer div {
+    flex-basis: 3rem;
+}
+
+.header {
+    display: grid;
+
+    grid-template-columns: repeat(2, 68%);
+    align-items: center;
+    gap: 14px;
+    padding: 0 0 0 14px;
+}
+
+h5 {
+    color: #ffffffe0;
+    font-weight: 500;
+}
+
+.time {
+    display: flex;
+
+    padding: 0 0 0 10px;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 38px;
+}
+
+.pre_time {
+    color: hsl(236, 100%, 87%);
+    font-size: 13px;
+    display: flex;
+    padding: 4px 0px 0px 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.active {
+    color: white;
+}
